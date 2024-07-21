@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #f9fafa;
+    --second-bg-color: #fff;
+    --main-text-color: #555f62;
+    --black-text-color: #141719;
+    --light-text-color: #fff;
+    --border-color: #eef1f1;
+    --main-link-color: #182cc0;
+    --hovered-link-color: #3295ce;
+    --font-size: 14px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: var(--font-size);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--second-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 5px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.search-btn {
+    margin-left: 15px;
+}
+
+.choose > a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    color: var(--main-link-color);
+    font-weight: bold;
+}
+
+.choose > a:hover {
+    color: var(--hovered-link-color);
+}
+
+.choose > a > svg {
+    margin-right: 5px;
+}
+
+.menu-btn-line {
+    background-color: var(--main-text-color);
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 5px;
+}
+.line1 {
+    width: 10px;
+}
+.line2 {
+    width: 20px;
+}
+.line3 {
+    width: 15px;
+}
+
+/* Hero */
+
+
+/* Packages */
+/* Offers */
+/* Digital Bank */
+/* Products */
+/* Private Banker */
+/* Rewards */
+/* Footer */
+footer {
+    background-color: var(--second-bg-color);
+}
+/* Cookies */
+/* Support Menu */
+
+/* Media Queries */

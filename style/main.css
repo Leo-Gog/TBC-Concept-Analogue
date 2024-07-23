@@ -197,6 +197,26 @@ h1 {
     color: var(--main-text-color);
 }
 
+/* Statistic */
+.statistics-section {
+    margin-top: 70px;
+    div {
+        background-color: var(--second-bg-color);
+        margin: 20px;
+        border-radius: 5px;
+        padding: 20px;
+        .stats {
+            color: var(--black-text-color);
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .stat-category {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
 /* Offers */
 /* Digital Bank */
 /* Products */

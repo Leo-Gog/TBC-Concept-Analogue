@@ -370,6 +370,45 @@ h1 {
     }
 }
 /* Rewards */
+.rewards-section {
+    margin-top: 80px;
+    padding: 20px;
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--black-text-color);
+    }
+    .slider {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        div {
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 235px;
+            height: 285px;
+            padding: 30px;
+            background-color: var(--second-bg-color);
+            margin-right: 15px;
+            img {
+                width: 110px;
+            }
+            :nth-child(2) {
+                color: var(--black-text-color);
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 30px;
+            }
+            :nth-child(3) {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+            
+        }
+    }
+}
+
 /* Footer */
 footer {
     background-color: var(--second-bg-color);

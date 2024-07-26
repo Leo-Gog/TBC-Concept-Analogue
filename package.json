@@ -1,6 +1,6 @@
 {
   "name": "tbc-concept-analogue",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "tech task for TBC Academy",
   "main": "index.js",
   "scripts": {

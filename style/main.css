@@ -157,6 +157,8 @@ h1 {
 .pkgs-section .slider {
     display: flex;
     margin-left: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 .pkgs-section article, .pkgs-section a {
     color: var(--light-text-color);
@@ -218,7 +220,86 @@ h1 {
     }
 }
 /* Offers */
+.offers-section {
+    margin-top: 80px;
+    h2 {
+        color: var(--black-text-color);
+        margin-left: 20px;
+        font-size: 16px;
+    };
+    .offers-slider{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        article {
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            max-width: 250px;
+            margin: 20px;
+            padding-bottom: 20px;
+        img {
+            background-color: var(--main-text-color);
+            width: 250px;
+            height: 150px;
+            /* border-radius: 5px, 0; */
+        };
+        .tags {
+            display: flex;
+            margin: 20px;
+            p {
+                margin-right: 10px;
+            };
+        };
+        .offer {
+            color: var(--black-text-color);
+            font-size: 18px;
+            margin: 20px;
+            font-weight: bold;
+        };
+    }
+
+    }
+}
+
 /* Digital Bank */
+.degital-bank-section {
+    background-color: var(--second-bg-color);
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 80px; /* სლაიდერის პროგრესის ხაზის დამატების შემდგომ შეიძლება შევცვალო */
+    h2 {
+        margin-bottom: 20px;
+        color: var(--black-text-color);
+        font-size: 16px;
+    }
+    img {
+        margin-top: 10px;
+        width: 290px;
+    }
+    >p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    button {
+        width: 290px;
+        height: 50px;
+        color: var(--main-link-color);
+        border: none;
+        border: 1px solid var(--main-link-color);
+        border-radius: 5px;
+        background-color: var(--second-bg-color);
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
 /* Products */
 /* Private Banker */
 /* Rewards */

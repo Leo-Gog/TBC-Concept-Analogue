@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;  /* დროებითი */
 }
 
 :root {
@@ -21,14 +22,17 @@ body {
     color: var(--main-text-color);
     font-size: var(--font-size);
 }
+html, body, main {
+    width: 100%;
+}
 
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* width: 100%; */
-    height: 80px;
+    width: 100%;
+    height: 82px;
     background-color: var(--second-bg-color);
     border-bottom: 1px solid var(--border-color);
     padding: 5px;
@@ -38,14 +42,22 @@ header {
     bottom: auto;
     left: 0;
     z-index: 9999;
+    overflow-x: hidden;
 }
 
-.logo {
+/* .logo {
     margin-left: 15px;
+} */
+
+.header-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
-.search-btn {
-    margin-left: 15px;
+.search-btn, .choose {
+    margin-right: 15px;
 }
 
 .choose > a {
@@ -412,6 +424,121 @@ h1 {
 /* Footer */
 footer {
     background-color: var(--second-bg-color);
+    width: 100%;
+
+
+    .footer-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        .lang {
+            background-color: var(--main-bg-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 40px;
+            border-radius: 3px;
+            color: var(--main-text-color);
+            font-size: 16px;
+            font-weight: bold;
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+    .footer-brakedowns {
+        details {
+            padding: 20px;
+            border-bottom: 1px solid #d1d5d6;
+
+            summary {
+                width: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--black-text-color);
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            };
+
+            a {
+                text-decoration: none;
+                color: var(--main-text-color);
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0;
+            }
+        }
+    }
+    >address {
+        font-style: normal;
+        padding-left: 20px;
+        font-size: 16px;
+        >p {
+            color: var(--black-text-color);
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: var(--main-text-color);
+            font-weight: bold;
+            display: block;
+            margin: 20px 0;
+            p{
+                display: inline;
+                margin-left: 5px;
+            }
+        }
+        .socnets {
+            font-size: 16px;
+            color: var(--black-text-color);
+            font-weight: bold;
+            div {
+                display: flex;
+                margin: 20px 0;
+                a {
+                    background-color: var(--main-bg-color);
+                    text-decoration: none;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    margin-right: 15px;
+                }
+                a:hover {
+                    color: var(--main-link-color);
+                }
+            }
+        }
+
+        
+    }
+    .footer-copy {
+        border-top: 1px solid var(--border-color);
+        padding: 20px;
+        >p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            img {
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    
 }
 /* Cookies */
 /* Support Menu */

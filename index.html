@@ -9,6 +9,9 @@
     <meta name="author" content="Levan Alimbarashvili">
     <title>თიბისი კონცეპტის ანალოგი | TBC Concept Analogue</title>
     <link rel="stylesheet" href="style/main.css">
+    <!-- swiper sources -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <noscript><strong>TBC კონცეპტი არ მუშაობს სათანადოდ JavaScript-ის გარეშე. გთხოვთ ჩართოთ ის.</strong></noscript>
@@ -99,56 +102,61 @@
         </section>
         <section class="offers-section">
             <h2>შეთავაზებები</h2>
-            <div class="offers-slider">
-                <article>
-                    <img src="" alt="">
-                    <div class="tags">
-                        <p>ინვესტიციები</p>
-                    </div>
-                    <div class="offer">Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <div class="tags">
-                        <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                    </div>
-                    <div class="offer">lorem</div>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <div class="tags">
-                        <p>ავტო</p>
-                        <p>თეგეტა მოტორსი</p>
-                    </div>
-                    <div class="offer">lorem</div>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <div class="tags">
-                        <p>ავტო</p>
-                        <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                        <p>თეგეტა მოტორსი</p>
-                    </div>
-                    <div class="offer">lorem</div>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <div class="tags">
-                        <p>დასვენება</p>
-                        <p>ვიზა</p>
-                        <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                    </div>
-                    <div class="offer">lorem</div>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <div class="tags">
-                        <p>დასვენება</p>
-                        <p>ვიზა</p>
-                        <p>ჯაზ ფესტივალის შეთავაზებები</p>
-                    </div>
-                    <div class="offer">lorem</div>
-                </article>
+            <div class="offers-slider swiper">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <div class="tags">
+                            <p>ინვესტიციები</p>
+                        </div>
+                        <div class="offer">Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <div class="tags">
+                            <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                        </div>
+                        <div class="offer">lorem</div>
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <div class="tags">
+                            <p>ავტო</p>
+                            <p>თეგეტა მოტორსი</p>
+                        </div>
+                        <div class="offer">lorem</div>
+                    </article>
+                    <article>
+                        <img src="" alt="">
+                        <div class="tags">
+                            <p>ავტო</p>
+                            <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                            <p>თეგეტა მოტორსი</p>
+                        </div>
+                        <div class="offer">lorem</div>
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <div class="tags">
+                            <p>დასვენება</p>
+                            <p>ვიზა</p>
+                            <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                        </div>
+                        <div class="offer">lorem</div>
+                    </article>
+                    <article>
+                        <img src="" alt="">
+                        <div class="tags">
+                            <p>დასვენება</p>
+                            <p>ვიზა</p>
+                            <p>ჯაზ ფესტივალის შეთავაზებები</p>
+                        </div>
+                        <div class="offer">lorem</div>
+                    </article>
+                </div>
+                <div class="swiper-scrollbar">
+                    <div class="swiper-scrollbar-drag">
+                </div>
             </div>
         </section>
         <section class="degital-bank-section">
@@ -162,22 +170,27 @@
         </section>
         <section class="products-section">
             <h2>პროდუქტები</h2>
-            <div class="slider">
-                <article>
-                    <img src="" alt="">
-                    <h1>ციფრული</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <h1>პრემიუმი</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <h1>360</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </article>
+            <div class="products-slider swiper">
+                <div class="slider swiper-wrapper">
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <h1>ციფრული</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <h1>პრემიუმი</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="" alt="">
+                        <h1>360</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                </div>
+                <div class="swiper-scrollbar">
+                    <div class="swiper-scrollbar-drag">
+                </div>
             </div>
         </section>
         <section class="personal-banking-section">
@@ -190,26 +203,31 @@
         </section>
         <section class="rewards-section">
             <h2>ჯილდოები</h2>
-            <div class="slider">
-                 <div>
-                    <img src="/imgs/global-finance.png" alt="logo of global finance">
-                    <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</p>
-                    <p>The Global Finance</p>
+            <div class="rewards-slider slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/imgs/global-finance.png" alt="logo of global finance">
+                        <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</p>
+                        <p>The Global Finance</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imgs/euromoney.png" alt="logo of euromoney">
+                        <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2023</p>
+                        <p>Euromoney</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imgs/global-finance.png" alt="logo of global finance">
+                        <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2022</p>
+                        <p>The Global Finance</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/imgs/the-banker.png" alt="logo of the banker">
+                        <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2021</p>
+                        <p>The Banker &amp; PWM</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="/imgs/euromoney.png" alt="logo of euromoney">
-                    <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2023</p>
-                    <p>Euromoney</p>
-                </div>
-                <div>
-                    <img src="/imgs/global-finance.png" alt="logo of global finance">
-                    <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2022</p>
-                    <p>The Global Finance</p>
-                </div>
-                <div>
-                    <img src="/imgs/the-banker.png" alt="logo of the banker">
-                    <p>საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2021</p>
-                    <p>The Banker &amp; PWM</p>
+                <div class="swiper-scrollbar">
+                    <div class="swiper-scrollbar-drag">
                 </div>
             </div>
         </section>
@@ -315,5 +333,44 @@
     <div class="support-btns">
         <img src="/imgs/3dots.svg" alt="3 dots vertically">
     </div>
+    <!-- slider scripts -->
+    <script>
+        const slider = (className) => {
+            const element = document.querySelector(className)
+            const swiper = new Swiper(className, {
+                direction: 'horizontal',
+                loop: false,
+                freeMode: false,
+                spaceBetween: 20,
+                breakpoints: {
+                    1080: {
+                    slidesPerView: 4
+                    },
+                    766: {
+                    slidesPerView: 3
+                    },
+                    480: {
+                    slidesPerView: 2.5
+                    }
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    dragSize: 50,
+                    draggable: true,
+                },
+                on: {
+                    init: function() {
+                        const hendler = element.querySelector('.swiper-scrollbar-drag')
+                            hendler.style.backgroundColor = '#182cc0';
+                            hendler.style.height = '2px'    
+                    },
+                },
+            });
+        }
+
+        slider('.offers-slider')
+        slider('.products-slider')
+        slider('.rewards-slider')
+    </script>
 </body>
 </html>

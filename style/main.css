@@ -201,7 +201,9 @@ header {
         margin: 20px;
         width: 100%;
         overflow-x: auto;
-        white-space: nowrap;
+        .part-1 {
+            display: flex;
+        }
     }
     article, a {
         color: var(--light-text-color);
@@ -481,6 +483,9 @@ footer {
         justify-content: space-between;
         align-items: center;
         margin: 0 20px;
+        .tbc-logo-2 {
+            display: none;
+        }
         .lang {
             background-color: var(--main-bg-color);
             display: flex;
@@ -770,20 +775,116 @@ footer {
             }
             svg {
                 display: block;
-                /* height: 0px; */
                 margin-left: -20px;
             }
         }
     }
-    /* .hero-section{} */
-    /* .pkgs-section {} */
+    .hero-section{
+        margin: 40px;
+        height: 820px;
+        img {
+            border-radius: 10px;
+        }
+        .hero-main {
+            padding-left: 40px;
+            > button {
+                width: 150px;
+            }
+        }
+        .hero-text {
+            font-size: 32px;
+        }
+    }
+    .pkgs-section {
+        .slider {
+            .part-1 {
+                flex-direction: column;
+                article {
+                    margin-bottom: 20px;
+                }
+            }
+            .part-2 {
+                article {height: 500px;}
+            }
+            article {
+                h1 {
+                    font-size: 24px;
+                }
+                a {
+                    font-size: 14px;
+                    top: -75px;
+                }
+            }
+        }
+    }
     /* .statistics-section {} */
     /* .offers-section {} */
-    /* .degital-bank-section {} */
-    /* .products-section {} */
-    /* .personal-banking-section {} */
+    .degital-bank-section {
+        height: 270px;
+        .img-wrapper {
+            position: relative;
+            top: 0;
+            right: 0;
+            img {
+                height: 270px;
+                width: 200px;
+                position: absolute;
+                top: -100px;
+                right: 0;
+            }
+        }
+        > p {
+            width: 400px;
+        }
+        button {
+            width: 150px;
+        }
+    }
+    .products-section {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .personal-banking-section {
+        margin: 0 40px;
+        margin-top: 60px;
+        img {
+            border-radius: 10px;
+        }
+        > div {
+            p {
+                width: 400px;
+            }
+            button {
+                width: 150px;
+            }
+        }
+    }
     /* .rewards-section {} */
-    /* footer {} */
+    footer {
+        .footer-head {
+            .tbc-logo-1 {
+                display: none;
+            }
+            .tbc-logo-2 {
+                display: block;
+                color: var(--black-text-color);
+            }
+        }
+
+        .footer-copy {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            background-color: inherit;
+            div, .rules > p {
+                font-size: 12px;
+            }
+            .rules {
+                margin-bottom: -16px;
+            }
+        }
+    }
     /* .cookies {} */
     /* .support-btns {} */
 }

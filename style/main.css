@@ -51,11 +51,17 @@ header {
             display: none;
         }
     }
+    nav {
+        display: none;
+    }
     .header-btns {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
+        .lang {
+            display: none
+        }
     };
     .search-btn, .choose {
         margin-right: 15px;
@@ -891,16 +897,40 @@ footer {
 
 /* 1080px + */
 @media screen and (min-width: 1080px) {
-    /* header{}
-    .hero-section{}
-    .pkgs-section {}
-    .statistics-section {}
-    .offers-section {}
-    .degital-bank-section {}
-    .products-section {}
-    .personal-banking-section {}
-    .rewards-section {}
-    footer {}
-    .cookies {}
-    .support-btns {} */
+    header{
+        nav {
+            display: block;
+            ul {
+                display: flex;
+                li {
+                    list-style: none;
+                    display: block;
+                    font-size: 14px;
+                }
+            }
+        }
+        .header-btns > .hamburger-menu-btn {
+            display: none;
+        }
+        .header-btns > .lang {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+    /* .hero-section{} */
+    /* .pkgs-section {} */
+    /* .statistics-section {} */
+    /* .offers-section {} */
+    /* .degital-bank-section {} */
+    /* .products-section {} */
+    /* .personal-banking-section {} */
+    /* .rewards-section {} */
+    /* footer {} */
+    /* .cookies {} */
+    /* .support-btns {} */
 }

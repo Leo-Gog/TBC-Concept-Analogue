@@ -368,6 +368,9 @@ header {
             margin-right: 5px;
         }
     }
+    .app-stores {
+        display: none;
+    }
 }
 /* Products */
 .products-section {
@@ -902,10 +905,12 @@ footer {
             display: block;
             ul {
                 display: flex;
+                align-items: center;
                 li {
                     list-style: none;
                     display: block;
                     font-size: 14px;
+                    padding: 30px;
                 }
             }
         }
@@ -922,11 +927,70 @@ footer {
             }
         }
     }
-    /* .hero-section{} */
-    /* .pkgs-section {} */
-    /* .statistics-section {} */
+    .hero-section{
+        .hero-bg > img {
+            height: 360px;
+        }
+        .hero-main {
+            top: -280px;
+            > p {
+                width: 400px;
+            }
+        }
+    }
+    .pkgs-section {
+        .slider {
+            width: 100%;
+            display: flex;
+            /* gap: px; */
+            .part-1 {
+                flex-direction: column;
+                margin-right: 20px;
+                article {
+                    height: unset;
+                    width: unset;
+                    margin-bottom: 0;
+                    img {
+                        width: 480px;
+                        height: 260px;
+                    }
+                }
+            }
+            .part-2 {
+                article {
+                    height: unset;
+                    width: unset;
+                    img {
+                        width: 450px;
+                        height: 575px;
+                    }
+                }
+            }
+        }
+    }
+    .statistics-section {
+        display: flex;
+        div {
+            width: 33%;
+        }
+    }
     /* .offers-section {} */
-    /* .degital-bank-section {} */
+    .degital-bank-section {
+        .download-btn {
+            display: none;
+        }
+        .app-stores {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                padding: 10px;
+                border: 1px solid var(--border-color);
+                width: 100px;
+                object-fit: cover;
+            }
+        }
+    }
     /* .products-section {} */
     /* .personal-banking-section {} */
     /* .rewards-section {} */

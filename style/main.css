@@ -71,23 +71,55 @@ header {
             color: var(--hovered-link-color);
         };
     };
+    .hamburger-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 25px;
+        width: 25px;
+    }
     .menu-btn-line {
         background-color: var(--main-text-color);
         height: 2px;
         border-radius: 1px;
         margin-top: 5px;
+        position: relative;
+        transition: all 500ms;
     };
     .line1 {
         width: 10px;
     };
     .line2 {
         width: 20px;
+        transition: none;
     };
     .line3 {
         width: 15px;
     };
 }
-
+/* hamburger menu */
+header {
+    .active {
+        .hamburger-menu-btn {
+            .menu-btn-line {
+                margin-top: 0;
+            };
+            .line1 {
+                width: 20px;
+                transform: rotate(-45deg);
+                top:4px;
+                right: 1px;
+            };
+            .line2 {
+                width: 0;
+            };
+            .line3 {
+                width: 20px;
+                transform: rotate(45deg);
+            };
+        }
+    }
+}
 /* Hero */
 
 .hero-section {
@@ -230,10 +262,26 @@ header {
 /* Offers */
 .offers-section {
     margin-top: 80px;
-    h2 {
-        color: var(--black-text-color);
-        margin-left: 20px;
-        font-size: 16px;
+    .offers-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        h2 {
+            color: var(--black-text-color);
+            font-size: 16px;
+        };
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--main-link-color);
+            font-size: 13px;
+            font-weight: bold;
+            svg {
+                margin-right: 5px;
+            }
+        }
     };
     .offers-slider{
         display: flex;
@@ -586,5 +634,16 @@ footer {
 
 /* Media Queries */
 /* 480px + */
+@media screen and (min-width: 480px) {
+
+}
+
 /* 766px + */
+@media screen and (min-width: 766px) {
+
+}
+
 /* 1080px + */
+@media screen and (min-width: 1080px) {
+
+}
